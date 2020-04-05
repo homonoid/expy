@@ -1,0 +1,19 @@
+Person " A comment here
+  has name
+
+
+
+
+
+  has age
+
+  get_name
+    name
+
+  
+  get_age
+    age
+
+Dog
+  has name
+  has sound

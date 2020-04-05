@@ -1,0 +1,43 @@
+" This is a comment. It should be ignored. This is its continuation.
+" This is a test for comment indentation detection capabilities.
+
+
+" All of this is a test for lexical analyzer's sanity.
+
+
+" Variable names (identifiers) should start with a lowercase letter, followed
+"  by alphanumerics or underscores.
+identifier
+
+
+" Class names should start with a capital letter, followed by  alphanumerics 
+"  or underscores.
+ClassName
+CLASSNAMe
+CLaSS_nAme
+
+" Constants are all-caps sequences of alphanumerics (opt. separated by 
+"  underscores). A constant should be at least 2 characters long.
+
+GREETING
+PI
+CIRCUMFERENCE
+
+" Single-character capital alpha.
+"  Its fate (: is it a class name or a constant?) is determined by the parser.
+A B C D
+
+" Numerals: decimal, floating point, hexadecimal, octal, binary, scientific not.
+"  and imaginary numbers.
+
+123456789 " -- decimal
+123456789j " -- imaginary
+0x0123456789abcdef " -- hexadecimal
+0o01234567 " -- octal
+0b01010101 " -- binary
+12.34e56 " -- scientific notation
+12.34e-56 " -- scientific notation #2
+
+" String literals.
+
+'hello!\'world\''
